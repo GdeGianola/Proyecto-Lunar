@@ -15,4 +15,4 @@ Otro dato importante ha sido tener que hacer otra versión de todos los .html y 
 
 **OBSERVACIÓN:**
 
-Es de saber que al ser un curso a distancia, los módulos constaran principalmente de trabajos. Está claro que hay que buscar información por cuenta de uno. Pero este trabajo ha sido muy complicado de realizar, ha faltado información de su realización teniendo varias dudas y problemas para hacerlo.
+Es de saber que al ser un curso a distancia, los módulos constaran principalmente de trabajos. Está claro que hay que buscar información por cuenta de uno, pero este trabajo ha sido muy complicado de realizar, ha faltado información de su realización teniendo varias dudas y problemas para hacerlo. Ademas de faltar explicaciones y ejemplos. La información sobre la tarea en moodle es muy escasa y para mi no ha ayudado mucho.
