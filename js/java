@@ -1,1 +1,74 @@
 
+var fuel = 100;
+var v = 0;
+var cordenadaY = 10;
+var a = 1.622;
+var dt = 0.199;
+var fuelHtml = document.getElementById("fuel");
+var velocidad = document.getElementById('velocidad');
+var altura = document.getElementById('altura');
+var nave = document.getElementsByClassName('cohete')[0];
+var maxAlt = document.body.clientHeight;
+var minAlt = 10;
+var encendido = false;
+var fuelTimer;
+document.onkeydown = function(e) {
+    if (!encendido && fuel > 0) {
+        encendido = true;
+        motorOn();
+    }
+    if (e.code == "ArrowUp" && encendido) {
+        subir();
+    } else if (e.code == "ArrowDown" && encendido) {
+        bajar();
+    } else {
+        encendido = false;
+        motorOff();
+    }
+}
+
+document.onkeyup = motorOff;
+
+function motorOn() {
+    nave.src = "img/cohete.png";
+    fuelTimer = setInterval(function(e) {
+        actualizarFuel();
+    }, 10);
+}
+
+function motorOff() {
+    nave.src = "img/cohete_apagado.jpg";
+    encendido = false;
+    clearInterval(fuelTimer);
+}
+
+function actualizarFuel() {
+    if (encendido && fuel > 0) {
+        fuel -= 0.1;
+        fuelHtml.innerHTML = fuel;
+        velocidad.innerHTML = v;
+        altura.innerHTML = a;
+    } else {
+        motorOff();
+    }
+}
+
+function subir() {
+    v += a * dt;
+    cordenadaY -= v * dt;
+    if (cordenadaY > minAlt) {
+        nave.style.transform = "translateY(" + cordenadaY + "%)";
+    } else {
+        cordenadaY = 10;
+    }
+}
+
+function bajar() {
+    v += a * dt;
+    cordenadaY += v * dt;
+    if (cordenadaY < maxAlt -100) {
+        nave.style.transform = "translateY(" + cordenadaY + "%)";
+    } else {
+        v = 0;
+    }
+}
