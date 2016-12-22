@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Proyecto Lunar</title>
-		<link rel='stylesheet' media='screen and (min-width: 721px)' href='./css/estilos.css'/>
-		<link rel='stylesheet' media='screen and (max-width: 720px)' href='./css/estilos.css'/>
-	</head>
-	<body>
-		<aside class="panel-izquierdo panel">
-			<h3>Panel de control</h3>
-			<nav>
-				<ul>
 
-					<li>
-						<a href="">Velocidad: 0,5cm/s</a>
-					</li>
-
-					<li>
-						<a href="">Nivel de aceite: 50L</a>
-					</li>
-
-					<li>
-						<a href="">Altura: 50cm</a>
-					</li>
-					
-				</ul>
-
-			</nav>
-
-		</aside>
-		<aside class="panel-derecho panel">
-			<nav>
-				<ul>
-					<li><a href=""><i class="menu">Opciones de juego</i></a>
-						<ul class="pausa">
-								<li><a href="">Pausa</a></li>
-
-								<li><a href="Intrucciones.html" target="_blank" >Como jugar</a></li>
-
-								<li><a href="acercade.html" target="_blank">Acerca de</a></li>
-
-						</ul>
-					</li>
-			</nav>
-		</aside>
-
-		</div>
-			<img class="cohete" src="img/cohete.png" />
-		</div>
-		 
-		
-		<div>
-			<img class="universo" src="img/universo.jpg" />
-		</div>
-
-		<div>
-			<img class="luna" src="img/luna.png" />
-		</div>
-	</body>
+<head>
+    <title>Proyecto Lunar</title>
+    <link rel='stylesheet' media='screen and (min-width: 721px)' href='./css/estilos.css' />
+    <link rel='stylesheet' media='screen and (max-width: 720px)' href='./css/estilos.css' />
+</head>
+<body>
+    <aside class="panel-izquierdo panel">
+        <h3>Panel de control</h3>
+        <nav>
+            <ul>
+                <li>
+                	Velocidad es:
+                    <span id="velocidad"></span>
+                </li>
+                <li>
+                    Nivel de aceite:
+                    <span id="fuel"></span>
+                </li>
+                <li>
+                    Altura es:
+                    <span id="altura"></span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <aside class="panel-derecho panel">
+        <nav>
+            <ul>
+                <li><a href=""><i class="menu">Opciones de juego</i></a>
+                    <ul class="pausa">
+                        <li><a href="">Pausa</a></li>
+                        <li><a href="Intrucciones.html" target="_blank">Como jugar</a></li>
+                        <li><a href="acercade.html" target="_blank">Acerca de</a></li>
+                    </ul>
+                </li>
+        </nav>
+    </aside>
+    <div id="cohete">
+        <img class="cohete" src="img/cohete.png" />
+    </div>
+    <!--<div>
+        <img class="universo" src="img/universo.jpg" />
+    </div>-->
+    <div>
+        <img class="luna" src="img/luna.png" />
+    </div>
+    <script type="text/javascript" src="my.js"></script>
+</body>
 
 </html>
